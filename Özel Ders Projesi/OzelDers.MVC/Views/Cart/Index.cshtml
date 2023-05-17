@@ -1,0 +1,100 @@
+@model CartViewModel
+<div class="container mb-5">
+    <h6 class="display-6" style="margin-top: 84px;">Alışveriş Sepetim</h6>
+<hr />
+@if (Model.CartItems.Count==0)
+{
+    <div class="alert alert-warning">
+        Sepetinizde ürün bulunmamaktadır!
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-8">
+            <h6 class="text-success display-6 fs-4 fw-normal">Ürünler</h6>
+            <hr>
+            <table class="table table-sm" id="myDataTable">
+                <thead>
+                    <tr class="text-danger">
+                        <th>Resim</th>
+                        <th>Ürün</th>
+                        <th>Fiyat</th>
+                        <th>Komisyon (%10)</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                            decimal? totalPrice = Model.TotalPrice();
+                            decimal? kdv = totalPrice - (totalPrice / (decimal?)(1.10));
+                        }
+                    @foreach (var cartItem in Model.CartItems)
+                    {
+                        <tr>
+                            <td class="align-middle text-center"><img src="~/images/users/@cartItem.ImageUrl" width="50"/></td>
+                            <td>@cartItem.TeacherName</td>
+                            <td>@($"{cartItem.ItemPrice - kdv:C2}")</td>
+                            <td>@($"{kdv:C2}")</td>
+                            <td>
+                                <a 
+                                    asp-area=""
+                                    asp-controller="Cart"
+                                    asp-action="DeleteFromCart"
+                                    asp-route-id="@cartItem.CartItemId"
+                                    class="btn btn-close btn-sm"></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            
+            <a class="btn btn-danger btn-sm"
+                asp-area=""
+                asp-controller="Cart"
+                asp-action="ClearCart"
+                asp-route-id="@Model.CartId"
+            >Sepeti Temizle</a>
+        </div>
+        <div class="col-4">
+            <h6 class="text-primary display-6 fs-4 fw-normal">Özet</h6>
+            <hr>
+             <table class="table table-sm">
+                <tbody>
+                    <tr>
+                        
+                        <th>Ders Fiyatı:</th>
+                        <td class="text-end">@($"{totalPrice - kdv:C2}")</td>
+                    </tr>
+                    <tr>
+                        <th>Komisyon Tutarı:</th>
+                        <td class="text-end">@($"{kdv:C2}")</td>
+                    </tr>
+                    <tr>
+                        <th>ÖDENECEK TOPLAM TUTAR</th>
+                        <td class="text-end fw-bold text-danger">
+                            @($"{(totalPrice):C2}")
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <div colspan="2" class="d-flex justify-content-between w-100">
+                <a asp-area=""
+                    asp-controller="Home"
+                    asp-action="AllTeachers"
+                     class="btn btn-success">Alışverişe Dön</a>
+                <a 
+                    asp-area=""
+                    asp-controller="Cart"
+                    asp-action="Checkout"
+                    class="btn btn-primary">Ödemeye Geç</a>
+            </div>
+        </div>
+    </div>
+}
+</div>
+@section Scripts{
+     @await Html.PartialAsync("_LoginStylesPartial");  
+}
+
+

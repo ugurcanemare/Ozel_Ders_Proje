@@ -1,0 +1,51 @@
+@model List<TeacherListViewModel>
+@{
+	List<TeacherListViewModel> users = Model;
+}
+<div class="container-fluid" style="margin-top: 84px;">
+        <div class="row">
+            <div class="col-2 mt-5">
+                 <h1 class="display-6 fs-5 mb-3 fw-normal ps-1 bg-light rounded-3 p-2">Kategoriler</h1>
+                @await Component.InvokeAsync("Categories")
+            </div>
+            <div class="col-10 mt-5">
+                 <h1 class="display-6 fs-5 mb-3 fw-normal ps-1 bg-light rounded-3 p-2">
+                     @(ViewBag.SelectedCategoryName==null ? "AnaSayfa / Öğretmenler / Tüm Kategoriler" : "AnaSayfa / Öğretmenler / " + ViewBag.SelectedCategoryName)
+                </h1>
+                <div class="row">
+                    @foreach (var user in users)
+				{	<div class="col-3 mb-5">
+  						  <div class="card h-100 categorie-item ci-text">
+  						    <img src="~/images/users/@user.Image" class="card-img-top" style="min-height: 200px; max-height: 200px;"></img>	
+  						    <div class="card-body ci-text">
+  						      <h5 class="card-title ">@user.FirstName @user.LastName</h5>
+							  <p class="ci-text"><ul class="card-text d-flex row">
+								@foreach (var item in user.Lessons)
+									{
+										<li class="list-unstyled col-6">@item.Name</li>
+									}</ul></p>
+								
+  						    </div>
+  						    <div class="p-3 ci-text row align-items-center">
+                                <div class="col-5">
+  						    	    <span class="">@($"{user.LessonPrice:C2}")</span>
+                                </div>
+                                <div class="col-7">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#AddToCartModal" class="btn btn-warning">Ders Al</button>
+                                </div>
+                            	
+								@await Html.PartialAsync("_TeachersAddToCartModalPartial")  
+  						    </div>
+  						  </div>
+  					</div>
+				}
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+    @section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+    @await Html.PartialAsync("_LoginStylesPartial"); 
+}

@@ -1,0 +1,10 @@
+Projeyi test etmek için kullanıcı bilgileri.
+
+Admin için;
+Kullanıcı Adı:ugurcan Şifre:Qwe123.
+
+Öğrenci için;
+Kullanıcı Adı:icardi Şifre:Qwe123.
+
+Öğretmen için;
+Kullanıcı Adı:maradona Şifre:Qwe123.

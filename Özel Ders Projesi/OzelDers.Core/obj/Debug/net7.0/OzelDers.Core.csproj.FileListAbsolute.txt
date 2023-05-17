@@ -1,0 +1,48 @@
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.deps.json
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.dll
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfo.cs
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.dll
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\refint\OzelDers.Core.dll
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\Admin\Desktop\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\ref\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.deps.json
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.AssemblyReference.cache
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfoInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfo.cs
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.CoreCompileInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\refint\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\BitirmeProjesi\OzelDers\OzelDers.Core\obj\Debug\net7.0\ref\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.deps.json
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.AssemblyReference.cache
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfoInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfo.cs
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.CoreCompileInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\refint\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\OzelDers.Core\obj\Debug\net7.0\ref\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.deps.json
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\bin\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.AssemblyReference.cache
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfoInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.AssemblyInfo.cs
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.csproj.CoreCompileInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\refint\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\Erp7\Erp7-Odevler-UgurcanEmare\ERP7_BitirmeProjesi_UğurcanEmare\Özel Ders Projesi\OzelDers.Core\obj\Debug\net7.0\ref\OzelDers.Core.dll

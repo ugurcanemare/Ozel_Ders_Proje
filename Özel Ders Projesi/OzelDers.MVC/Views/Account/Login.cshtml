@@ -1,0 +1,31 @@
+@model LoginViewModel
+<div class="container vh-100"> 
+    <div class="row"> 
+        <div class="col-md-6"> 
+            <div class="card"> 
+                <form asp-area="" asp-controller="Account" asp-action="Login" method="post" class="box"> 
+                    <h1>Giriş Yap</h1> 
+                    <p class="text-muted"> Lütfen Kullanıcı Adınızı ve Şifrenizi Girin!</p> 
+                    <input class="form-control" asp-for="UserName">
+                    <span class="text-white" asp-validation-for="UserName"></span> 
+                    <input class="form-control" asp-for="Password">
+                    <span class="text-white d-block" asp-validation-for="Password"></span> 
+                    <a class="forgot text-muted" href="#">Şifremi Unuttum?</a> 
+                    <button type="submit" class="btn">Giriş Yap</button>
+                    <div class="col-md-12"> 
+                        <ul class="social-network social-circle"> 
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li> 
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> 
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li> 
+                        </ul> 
+                    </div> 
+                </form> 
+            </div> 
+        </div> 
+    </div>
+</div>
+
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+    @await Html.PartialAsync("_LoginStylesPartial"); 
+}

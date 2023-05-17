@@ -1,0 +1,171 @@
+<header class="header-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="site-logo">
+          <a class="baslik" href="/"><i class="fa-solid fa-school-lock"></i> Özel Ders</a>
+        </div>
+        <div class="nav-switch">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 text-end" >
+        <nav class="main-menu">
+          <ul>
+            @if(User.Identity.IsAuthenticated)
+            {
+              if (User.IsInRole("Admin"))
+              {
+                <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house me-1"></i>Ana Sayfa</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="AllTeachers"><i class="fa-solid fa-user-tie me-1"></i>Öğretmenler</a></li>
+                <li><a asp-area="Admin" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-user-gear me-1"></i>Admin Paneli</a></li>
+                <li><a class="" asp-area="" asp-controller="Account" asp-action="Logout"><i class="fa-solid fa-right-to-bracket fa-rotate-180 me-1"></i>Çıkış Yap</a></li>
+              }
+          
+              if(User.IsInRole("Teacher"))
+              {
+                <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house me-1"></i>Ana Sayfa</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="AllTeachers"><i class="fa-solid fa-user-tie me-1"></i>Öğretmenler</a></li>
+                <li><a asp-area="" asp-controller="Cart" asp-action="Index"><i class="fa-solid fa-cart-shopping me-1"></i>Sepetim</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user me-1"></i>Hesabım</a>
+                  <ul class="dropdown-menu">
+                    <li style="margin-left: -20px;"><a class="dropdown-item" asp-controller="Account" asp-action="TeacherManage" asp-route-id="@User.Identity.Name">Profilim</a></li>
+                    <li style="margin-left: -20px;"><a class="dropdown-item ps-0" asp-area="" asp-controller="Teachers" asp-action="Index">Ders Talepleri</a></li>
+                  </ul>
+                </li>
+                <li><a class="" asp-area="" asp-controller="Account" asp-action="Logout"><i class="fa-solid fa-right-to-bracket fa-rotate-180 me-1"></i>Çıkış Yap</a></li>
+              }
+              if(User.IsInRole("Student"))
+              {
+                <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house me-1"></i>Ana Sayfa</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="AllTeachers"><i class="fa-solid fa-user-tie me-1"></i>Öğretmenler</a></li>
+                <li><a asp-area="" asp-controller="Cart" asp-action="Index"><i class="fa-solid fa-cart-shopping me-1"></i>Sepetim</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user me-1"></i>Hesabım</a>
+                  <ul class="dropdown-menu">
+                    <li style="margin-left: -20px;"><a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="StudentManage" asp-route-id="@User.Identity.Name">Profilim</a></li>
+                    <li style="margin-left: -20px;"><a class="dropdown-item ps-0" asp-area="" asp-controller="Students" asp-action="Index">Ders Taleplerim</a></li>
+                  </ul>
+                </li>
+                <li><a class="" asp-area="" asp-controller="Account" asp-action="Logout"><i class="fa-solid fa-right-to-bracket fa-rotate-180 me-1"></i>Çıkış Yap</a></li>
+              }
+           
+            }
+            else{
+              <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house me-1"></i>Ana Sayfa</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="AllTeachers"><i class="fa-solid fa-user-tie me-1"></i>Öğretmenler</a></li>
+              <li class="dropdown">
+              <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-plus me-1"></i>Kayıt Ol</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" asp-area="" asp-controller="Account"
+                    asp-action="RegisterTeacher">Öğretmen</a></li>
+                <li><a class="dropdown-item" asp-area="" asp-controller="Account"
+                    asp-action="RegisterStudent">Öğrenci</a></li>
+              </ul>
+            </li>
+            <a class="site-btn header-btn ms-5" asp-area="" asp-controller="Account"
+                    asp-action="Login"><i class="fa-solid fa-right-to-bracket me-1"></i>Giriş Yap</a>
+            }
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @section Styles{
+<link rel="stylesheet" href="~/css/navbar.css">
+}
+<header>
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+<div class="container">
+<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-graduation-cap
+pe-2"></i>Özel Ders</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+aria-controls="navbarSupportedContent"
+aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+<ul class="navbar-nav flex-grow-1">
+<li class="nav-item">
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="RegisterTeacher">Öğretmen Olarak
+Kaydol</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="navbar navbar-default probootstrap-navbar">
+<div class="container">
+<div class="navbar-header">
+<div class="btn-more js-btn-more visible-xs">
+<a href="#"><i class="icon-dots-three-vertical "></i></a>
+</div>
+<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-graduation-cap
+pe-2"></i>Özel Ders</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+aria-controls="navbarSupportedContent"
+aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+
+<div id="navbar-collapse" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li class="nav-item">
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="RegisterTeacher">Öğretmen Olarak
+Kaydol</a>
+</li>
+<li><a href="teachers.html">Teachers</a></li>
+<li><a href="events.html">Events</a></li>
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
+<ul class="dropdown-menu">
+<li><a href="about.html">About Us</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course-single.html">Course Single</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li class="dropdown-submenu dropdown">
+<a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Second Level Menu</a></li>
+<li><a href="#">Second Level Menu</a></li>
+<li><a href="#">Second Level Menu</a></li>
+<li><a href="#">Second Level Menu</a></li>
+</ul>
+</li>
+<li><a href="news.html">News</a></li>
+</ul>
+</li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header> *@

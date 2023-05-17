@@ -1,0 +1,69 @@
+﻿@model List<UserViewModel>
+@{
+	List<UserViewModel> users = Model;
+}
+
+	<!-- Hero section -->
+	<section class="hero-section set-bg" data-setbg="img/bg.jpg">
+		<div class="container">
+			<div class="hero-text text-white">
+				<h2>Get The Best Free Online Courses</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
+					scelerisque, at rutrum nulla <br> dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<form class="intro-newslatter">
+						<input type="text" placeholder="Name">
+						<input type="text" class="last-s" placeholder="E-mail">
+						<button class="site-btn">Sign Up Now</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+	<!-- categories section -->
+	<section class="categories-section spad d-block">
+		<div class="container">
+			<div class="section-title">
+				<h2>Our Course Categories</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
+					scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+			</div>
+			<div class="row">
+				<!-- categorie -->
+				
+				@foreach (var user in users)
+				{
+						<div class="col-3 mb-5">
+  						  <div class="card h-100 categorie-item ci-text">
+  						    <img src="~/images/users/@user.Image" class="card-img-top" style="min-height: 200px; max-height: 200px;"></img>	
+  						    <div class="card-body ci-text">
+  						      <h5 class="card-title ">@user.FirstName @user.LastName</h5>
+							  <p class="ci-text"><ul class="card-text d-flex row">
+								@foreach (var item in user.Lessons)
+									{
+										<li class="list-unstyled col-6">@item.Name</li>
+									}</ul></p>
+								
+  						    </div>
+  						    <div class="p-3 ci-text row align-items-center">
+								<div class="col-6">
+  						    		<span class="">@($"{user.LessonPrice:C2}")</span>
+								</div>
+								<div class="col-6">
+									 <button type="button" data-bs-toggle="modal" data-bs-target="#AddToCartModal" class="btn btn-warning">Ders Al</button>
+									
+										@await Html.PartialAsync("_HomeAddToCartModalPartial")  
+								</div>
+  						    </div>
+  						  </div>
+  					</div>
+				}
+			</div>
+		</div>
+	</section>
