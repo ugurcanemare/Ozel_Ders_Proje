@@ -1,0 +1,12 @@
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\bin\Release\net7.0\OzelDers.Core.deps.json
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\bin\Release\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\bin\Release\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\OzelDers.Core.csproj.AssemblyReference.cache
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\OzelDers.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\OzelDers.Core.AssemblyInfoInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\OzelDers.Core.AssemblyInfo.cs
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\OzelDers.Core.csproj.CoreCompileInputs.cache
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\refint\OzelDers.Core.dll
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\OzelDers.Core.pdb
+C:\Users\EMARE\OneDrive\Masaüstü\OzelDers\Özel Ders Projesi\OzelDers.Core\obj\Release\net7.0\ref\OzelDers.Core.dll
