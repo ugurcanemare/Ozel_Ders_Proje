@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using Iyzipay;
 using Iyzipay.Model;
 using Iyzipay.Request;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using OzelDers.Business.Abstract;
 using OzelDers.Entity.Concrete;
 using OzelDers.Entity.Concrete.Identity;
@@ -60,10 +54,15 @@ namespace OzelDers.MVC.Controllers
         [HttpPost]
         public IActionResult AddToCart(string id)
         {
-            var userId = _userManager.GetUserId(User);
-            _cartService.AddToCart(userId, id);
-            _notyfService.Success("Ürün sepetinize başarıyla eklenmiştir");
+            if(User.Identity.IsAuthenticated)
+            {
+                var userId = _userManager.GetUserId(User);
+                _cartService.AddToCart(userId, id);
+                _notyfService.Success("Ürün sepetinize başarıyla eklenmiştir");
+                return RedirectToAction("Index");
+            }
             return RedirectToAction("Index");
+       
         }
         public async Task<IActionResult> DeleteFromCart(int id)
         {

@@ -20,14 +20,26 @@
             </div>
           </div>
         </div>
-       
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
-        <form asp-area="" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.UserName">
-          <button type="submit" class="btn btn-primary">Ders Al</button>
-        </form>
-        
-      </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                        <form asp-area="" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.UserName">
+                            <button type="submit" class="btn btn-primary">Ders Al</button>
+                        </form>
+
+                    </div>
+                }
+                else
+                {
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                        <form asp-area="" asp-controller="Account" asp-action="Login">
+                            <button type="submit" class="btn btn-primary">Ders Al</button>
+                        </form>
+
+                    </div>
+                }
     </div>
   </div>
 </div>
